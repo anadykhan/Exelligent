@@ -1,6 +1,6 @@
 /**
-* Template Name: BizLand - v3.3.0
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+* Template Name: Exelligent - v3.3.0
+* Template URL: https://bootstrapmade.com/Exelligent-bootstrap-business-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
