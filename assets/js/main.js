@@ -4,6 +4,30 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the current URL path (e.g., "/about.html")
+  var currentPath = window.location.pathname;
+
+  // Normalize the path (remove leading slashes)
+  currentPath = currentPath.replace(/^\/|\/$/g, '');
+
+  // Select all navigation links
+  var navLinks = document.querySelectorAll('#navbar .nav-link');
+
+  // Iterate over each link
+  navLinks.forEach(function (link) {
+    // Normalize the href attribute (remove leading slashes)
+    var linkPath = link.getAttribute('href').replace(/^\/|\/$/g, '');
+
+    // Check if the href matches the current path
+    if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+});
+
 (function() {
   "use strict";
 
